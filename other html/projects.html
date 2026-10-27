@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Projects | Discovra</title>
+  <link rel="stylesheet" href="../other css/style.css">
+</head>
+
+<body>
+  <header class="site-header"><a class="brand" href="../index (2).html">Discovra<span>.</span></a><button class="menu-toggle"
+      aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    <nav class="main-nav"><a href="../index (2).html">Home</a><a class="active" href="../other html/projects.html">Projects</a><a
+        href="../other html/students.html">Students</a><a href="../other html/collaborate.html">Collaborate</a><a
+        href="../other html/community.html">Community</a></nav>
+    <div class="header-actions"><a class="login-link" href="../other html/login.html">Log in</a><a class="button button-small"
+        href="../other html/signup.html">Join Discovra</a></div>
+  </header>
+  <main class="container page-main">
+    <section class="page-intro">
+      <p class="eyebrow">Explore</p>
+      <h1>Projects worth discovering.</h1>
+      <p>Browse ideas, follow what students are building, and find a project that matches your interests.</p>
+    </section>
+    <div class="filter-bar"><label class="search-field"><span>Search projects</span><input id="project-search"
+          type="search" placeholder="Try “attendance” or “JavaScript”"></label><label
+        class="filter-field"><span>Category</span><select id="category-filter">
+          <option value="all">All categories</option>
+          <option>Education</option>
+          <option>Productivity</option>
+          <option>Community</option>
+          <option>Technology</option>
+        </select></label><label class="filter-field"><span>Status</span><select id="status-filter">
+          <option value="all">All statuses</option>
+          <option>Planning</option>
+          <option>In progress</option>
+          <option>Looking for team</option>
+          <option>Completed</option>
+        </select></label></div>
+    <div class="card-grid project-grid" id="projects-list">
+      <article class="project-card searchable-card" data-name="smart attendance system classroom"
+        data-category="Education" data-status="In progress" data-tech="html css javascript">
+        <div class="card-top"><span class="tag">Education</span><span class="project-state">In progress</span></div>
+        <h3>Smart Attendance System</h3>
+        <p>A concept for making classroom attendance easier to record and review.</p>
+        <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <div class="card-bottom"><span>By Tobi A.</span><a href="project-details.html">View details →</a></div>
+      </article>
+      <article class="project-card searchable-card" data-name="studyflow student planner study tasks"
+        data-category="Productivity" data-status="Looking for team" data-tech="ui ux html css">
+        <div class="card-top"><span class="tag">Productivity</span><span class="project-state">Looking for team</span>
+        </div>
+        <h3>StudyFlow</h3>
+        <p>A student planner concept for organizing tasks, goals, and study sessions.</p>
+        <div class="tag-row"><span>UI/UX</span><span>HTML</span><span>CSS</span></div>
+        <div class="card-bottom"><span>By Mariam O.</span><a href="project-details.html">View details →</a></div>
+      </article>
+      <article class="project-card searchable-card" data-name="local skills exchange community skills"
+        data-category="Community" data-status="Planning" data-tech="research web design">
+        <div class="card-top"><span class="tag">Community</span><span class="project-state">Planning</span></div>
+        <h3>Local Skills Exchange</h3>
+        <p>A platform idea for helping people share practical skills within their community.</p>
+        <div class="tag-row"><span>Research</span><span>Web design</span></div>
+        <div class="card-bottom"><span>By Daniel K.</span><a href="project-details.html">View details →</a></div>
+      </article>
+      <article class="project-card searchable-card" data-name="campus help desk support" data-category="Technology"
+        data-status="Completed" data-tech="html css">
+        <div class="card-top"><span class="tag">Technology</span><span class="project-state">Completed</span></div>
+        <h3>Campus Help Desk</h3>
+        <p>A simple concept for organizing common student questions and helpful campus information.</p>
+        <div class="tag-row"><span>HTML</span><span>CSS</span></div>
+        <div class="card-bottom"><span>By Femi R.</span><a href="project-details.html">View details →</a></div>
+      </article>
+      <p id="empty-state" class="empty-state" hidden>No projects match those filters. Try a different search.</p>
+    </div>
+    <div class="center-action"><a class="button" href="signup.html">Share your project</a></div>
+    <p class="demo-note">Sample content only. Search and filters work in this front-end preview; project data is not
+      saved to a database.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="brand" href="index.html">Discovra<span>.</span></a>
+      <p>Discover talent. Connect. Create.</p><small>© 2026 Discovra. A student project concept.</small>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+
+</html>
